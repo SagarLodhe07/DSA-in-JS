@@ -8,16 +8,21 @@ const romanToInt = (s) => {
     D: 500,
     M: 1000,
   };
-
   let final = 0;
-
   for (let i = 0; i < s.length; i++) {
     let current = romanSymbol[s[i]];
     let next = romanSymbol[s[i + 1]];
+
     final += next > current ? -current : current;
   }
-  return final
+  return final;
 };
 
-console.log(romanToInt("III"));
-console.log(romanToInt("IV"));  
+
+
+console.log(romanToInt('III'));
+console.log(romanToInt('IV`'));
+
+// Subscribe for more 
+// comments 
+// like
